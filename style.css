@@ -1,0 +1,66 @@
+.main{
+    position: relative;
+}
+
+.chess-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #333;
+    width: 400px;
+    height: 400px;
+}
+
+.pieces-container{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+}
+
+.chess-container > div{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.pieces-container > div{
+    position: absolute;
+    margin: 12px;
+    width: 25px;
+    height: 25px;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.predict{
+    background-color: aqua !important;
+}
+
+.selected{
+    background-color: green !important;
+}
+
+.white-piece{
+    background-color: white;
+}
+
+.black-piece{
+    background-color: black;
+}
+
+div.row-1:nth-child(even), div.row-3:nth-child(even), div.row-5:nth-child(even), div.row-7:nth-child(even){
+    background-color: brown;
+}
+
+div.row-1:nth-child(odd), div.row-3:nth-child(odd), div.row-5:nth-child(odd), div.row-7:nth-child(odd){
+    background-color: burlywood;
+}
+
+div.row-0:nth-child(odd), div.row-2:nth-child(odd), div.row-4:nth-child(odd), div.row-6:nth-child(odd){
+    background-color: brown;
+}
+
+div.row-0:nth-child(even), div.row-2:nth-child(even), div.row-4:nth-child(even), div.row-6:nth-child(even){
+    background-color: burlywood;
+}
