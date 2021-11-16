@@ -1,7 +1,8 @@
 "use strict"
 
 // TODO: Solve problem while in check can't move other pieces
-// TODO: Rock Possibility
+// TODO: Solve problem when a pawn can "jump" above pieces if he moves 2 cases away
+// TODO: Add turn system
 
 
 var container = document.querySelector(".chess-container");
